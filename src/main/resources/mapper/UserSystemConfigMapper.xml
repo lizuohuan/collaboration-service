@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.magicbeans.collaboration.mapper.UserSystemConfigMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.magicbeans.collaboration.entity.UserSystemConfig">
+    <result column="id" property="id" />
+    <result column="create_time" property="createTime" />
+    <result column="update_time" property="updateTime" />
+        <result column="userId" property="userId" />
+        <result column="isCommonUseMatch" property="isCommonUseMatch" />
+        <result column="unIntoTheTankIsSee" property="unIntoTheTankIsSee" />
+        <result column="mistakeSeasonIsSee" property="mistakeSeasonIsSee" />
+        <result column="activateClosetIsValid" property="activateClosetIsValid" />
+        <result column="clothingSeasonIsSee" property="clothingSeasonIsSee" />
+        <result column="isBuyTimeOrder" property="isBuyTimeOrder" />
+        <result column="isPriceOrder" property="isPriceOrder" />
+        <result column="isTypeOrder" property="isTypeOrder" />
+        <result column="isUseNumOrder" property="isUseNumOrder" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+    id,
+    create_time AS createTime,
+    update_time AS updateTime,
+        userId, isCommonUseMatch, unIntoTheTankIsSee, mistakeSeasonIsSee, activateClosetIsValid, clothingSeasonIsSee, isBuyTimeOrder, isPriceOrder, isTypeOrder, isUseNumOrder
+    </sql>
+
+</mapper>
